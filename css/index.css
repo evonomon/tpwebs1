@@ -1,11 +1,11 @@
 html, body {
   padding-top:80px;
   background-repeat: no-repeat;
-  margin: 0px;
+  margin: 0;
  }
 div { column-gap : 3rem}
 body {
- background-color: white;
+ background-color: black;
  font-family: Calibri, sans-serif;
  font-size: 125%;
  width: 110%;
@@ -85,14 +85,20 @@ a:active, a:focus {
 #photopain
 {
  width: 100%;
+ height: 100%;
 }
 #logo
 {
   position: fixed;
   width: 25%;
   padding-top: 50px;
-  padding-left: 60px;
+  padding-left: 70%;
 }
+.imagederoulant
+{
+  width: 50%;
+}
+
 @keyframes AutoSlide {
     0% {
         left: 0px; /*1ère image*/
@@ -101,39 +107,38 @@ a:active, a:focus {
         left: 0px; /*idem pour attente*/
     }
     35% {
-        left: -150px; /*2ème image*/
+        left: -33%; /*2ème image*/
     }
     50% {
-        left: -150px; /*idem pour attente*/
+        left: -33%; /*idem pour attente*/
     }
     70% {
-        left: -300px; /*3ème image*/
+        left: -67%; /*3ème image*/
     }
     85% {
-        left: -300px; /*idem pour attente*/
+        left: -67%; /*idem pour attente*/
     }
     100% {
         left: 0px; /*1ère image*/
     }
 }
-#slideshow {
-  padding-top: 300px;
-    vertical-align: top;
-    width: 500px;
-    height: 500px;
-    margin:  20px auto;
-    overflow: hidden;
-}
+
 #sContent li {
     display: inline;
 }
+#slideshow {
+    padding-top: 200px;
+    position: fixed;
+    width: 33%;
+    height: 30%;
+
+    overflow: hidden;
+
+}
+
 #sContent {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 2000px;
-    margin: 0;
-    padding: 0;
+    width: 99%;
 
     /*CSS3 keyframes animation*/
     animation-name: AutoSlide;
